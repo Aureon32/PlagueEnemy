@@ -59,6 +59,7 @@
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\SpawnInArea.cs" />
     <Compile Include="Assets\findobject.cs" />
     <Compile Include="Assets\clock.cs" />
+    <Compile Include="Assets\hueta.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\PlaceOnSurfaceAtStart.cs" />
     <Compile Include="Assets\spawn_ingridient.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\ForceGrassDistanceInEditor.cs" />
@@ -67,7 +68,9 @@
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\KeepOnSurface.cs" />
     <Compile Include="Assets\type.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\SimpleSmoothMouseLook.cs" />
+    <Compile Include="Assets\spheremovement.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\2DTools\Scripts\CircleMoverSample.cs" />
+    <Compile Include="Assets\EnemyVision.cs" />
     <Compile Include="Assets\moveset.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Example Data\Scripts\PlayerHoverController.cs" />
     <Compile Include="Assets\Tom&apos;s Terrain Tools\Scripts\TreeExplosion.cs" />

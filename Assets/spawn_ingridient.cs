@@ -8,15 +8,22 @@ public class spawn_ingridient : MonoBehaviour
     public int quiality;
     public GameObject CurrentGameObject;
     public GameObject[] ingridient;
-    int chance, ingrchance;
+    int chance;
     public float timer,cooldown;
     void Start()
     {   
-        respawn();
+
     }
     private void Awake()
     {
         
+    }
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            respawn();
+        }
     }
     void respawn()
     {
@@ -58,19 +65,14 @@ public class spawn_ingridient : MonoBehaviour
                 break;
         }
     }
-    void RollIngridient(int rare)
+    int RollIngridient(int rare)
     {
         var a = ingridient.Where(p => p.gameObject.GetComponent<type>().typeobject == rare);
-        ingrchance = Random.Range(0, a.Count());
-    }
-    void spawn()
-    {
-        Instantiate(ingridient[ingrchance], CurrentGameObject.transform);
+        return Random.Range(0, a.Count());
     }
     void finalspawn(int rare)
     {
-        RollIngridient(rare);
-        spawn();
+        Instantiate(ingridient[RollIngridient(rare)], CurrentGameObject.transform);
     }
   
 }
